@@ -12,7 +12,7 @@ const Menu = () => {
         <nav>
             <div className="navContainer">
                 <div className="logo">
-                    <img src="/logo.svg" alt="loopstudios" />
+                    <img src="/loopstudio-landing-page/logo.svg" alt="loopstudios" />
                 </div>
                 <div className="menuMobile" onClick={toggleMenu}>
                     {menuOpen ? (
