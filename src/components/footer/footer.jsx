@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="sectionContainer">
                 <div className="item1">
                     <div className="imageContainer">
-                        <img src="/logo.svg" alt="Loopstudios" />
+                        <img src="/loopstudio-landing-page/logo.svg" alt="Loopstudios" />
                     </div>
                     <ul>
                         <a href='#vr'>
