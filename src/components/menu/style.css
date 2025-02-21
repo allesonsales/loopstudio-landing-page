@@ -1,0 +1,91 @@
+nav {
+    width: 100vw;
+    position: absolute;
+    top: 0;
+
+     .navContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem;
+
+         .logo {
+        position: static;
+        z-index: 800;
+        }
+    
+         .menuMobile {
+            position: static;
+            color: white;
+            z-index: 500;   
+            
+             .bi {
+                font-size: 1.5rem;
+            }
+
+             ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 2rem;
+                list-style: none;
+                background-color: black;
+                width: 100vw;
+                height: 100vh;
+                color: white;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: -10;
+                transform: translateY(-5%);
+    
+                 li {
+                    font-family: "Alata", serif;
+                    font-size:1.5rem;
+                    font-weight: 100;
+                    text-transform: uppercase;
+                }
+            }
+        }        
+    }
+}
+
+.menuDesktop {
+    display: none;
+}
+
+@media (min-width: 1000px) {
+    nav {
+        .navContainer {
+            padding: 2rem 15rem;
+            
+            .menuMobile {
+                display: none;
+            }
+        
+            .menuDesktop {
+                display: flex;
+                width: 100%;
+                justify-content: flex-end;
+                color: white;
+                font-family: 'josefin sans', serif;
+                font-size: 1.2rem;
+        
+                ul {
+                    display: flex;
+                    list-style: none;
+                    justify-content: space-around;
+                    width: 50%;
+
+                    li {
+                        cursor: pointer;
+                    }
+
+                    li:hover {
+                        color: aquamarine;
+                    }
+                }
+            }
+        }
+    }
+}

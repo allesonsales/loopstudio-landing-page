@@ -1,0 +1,63 @@
+#vr {
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    
+    .sectionContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5rem 2rem;
+        width: 100%;
+
+        .vrImage {
+            width: 80%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .vrText {
+            text-align: center;
+            font-family: "Alata", serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+
+            p {
+                line-height: 25px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    #vr {
+
+        .sectionContainer {
+            flex-direction: row;
+            padding: 2rem 10rem;
+            position: relative;
+            
+            .vrImage {
+                position: relative;
+                width: 100%;
+                z-index: 4;
+            }
+
+            .vrText {
+                background-color: white;
+                padding: 1rem;
+                width: 70%;
+                position: relative;
+                left: -90px;
+                max-width: 100%;
+                bottom: -100px;
+                z-index: 5;
+            }
+        }
+    }
+}
