@@ -5,7 +5,7 @@ const Vr = () => {
         <section id="vr">
             <div className="sectionContainer">
                 <div className="vrImage">
-                    <img src="../../images/mobile/image-interactive.jpg" alt="" />
+                    <img src="/loopstudio-landing-page/image-interactive.jpg" alt="" />
                 </div>
                 <div className="vrText">
                     <h2>The leader in interactive vr</h2>
